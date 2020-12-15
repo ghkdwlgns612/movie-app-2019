@@ -1,0 +1,51 @@
+body{
+    background-color: whitesmoke;
+}
+
+
+.movie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-color: lightgray;
+    border-style :outset;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.movie:hover{
+    width:inherit;
+    height:inherit;
+    background-color: wheat;
+    /* 추가된 부분 */
+    opacity:0.4;
+    transition:all .6s linear;
+    z-index: 0;
+}
+
+.movie img{
+    width:200px;
+    height: 90%;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.movie .movie_data{
+    width: 300px;
+    height: 306px;
+    margin: 20px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.movie .movie_data::-webkit-scrollbar {
+    display: none;
+}
+
+.movie .movie_data li{
+    list-style: none;
+}
+
